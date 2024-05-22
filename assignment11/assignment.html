@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @font-face{
+            font-family: 'luckiestguy';
+            src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
+        }
         #heading{
             
         }
@@ -12,6 +16,13 @@
             position: absolute;
             right : 5%;
             bottom : 10%;
+        }
+        #INname{
+            position: fixed;
+            left : 15%;
+            bottom : 15%;
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
     </style>
 </head>
@@ -23,7 +34,7 @@
     </div>
     <div>
         <main id="main">
-            <div class="box"></div><br>
+            <p id="INname">Shifty's<br>Playlist</p>
             <img src="../assignment11/imgs/바트 1.jpg" width="70%" height="70%">
         </main>
     </div>
