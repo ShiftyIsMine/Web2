@@ -9,25 +9,39 @@
             font-family: 'luckiestguy';
             src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
         }
-        body{
-            margin: 0 auto;
-            width : 1500px;  
+        *{
+            margin: 0;
+            padding: 0;
         }
-        #Bart{
+        #MAIN{
+            margin: 0 auto;
+            width : 80%;  
+        }
+        body{
+              
+        }
+        .bartbox{
             float : right;
             position: relative;
-
+            margin-right: 15%;
+            margin-top: 3%;
+            border-radius: 50%;
         }
-
         #heading{
-  
+            
         }
-        #main{
-            position: absolute;
-            right : 20%;
-            bottom : 10%;
+        .Textbox{
+            position: relative;
+            float : left;
+            margin-left: 15%;
+            margin-top: 7%;
+            /* bottom : 10%; */
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 72px;
+            color: #F9DB3A;
         }
-        #INname{
+        /* #INname{
             position: fixed;
             left : 20%;
             bottom : 15%;
@@ -35,19 +49,19 @@
             text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             font-size: 72px;
             color: #F9DB3A;
-        }
+        } */
     </style>
 </head>
 <body>
     <div>
         <header id="heading">
-            <img src="../assignment11/imgs/headimg.jpg" width ="100%">
+            <img src="../assignment11/imgs/headimg.jpg" width = "100%" height = "300px" >
         </header>
     </div>
-    <div>
+    <div id = "MAIN">
         <main id="main">
-            <p id="INname">Shifty's<br>Playlist</p>
-            <img id="Bart" src="../assignment11/imgs/바트 1.jpg" width="70%" height="70%">
+            <p class = "Textbox" id="INname">Shifty's<br>Playlist</p>
+            <img class = "bartbox" id="Bart" src="../assignment11/imgs/bart2.gif" width = "350px" height = "350px">
         </main>
     </div>
 </body>
