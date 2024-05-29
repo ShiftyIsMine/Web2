@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen {
+        /* 스마트포온(소형 디바이이스) */
+        @media screen and (max-width: 767px){
             body{
-        background-color: aquamarine;
+                background-color: aquamarine;
+            }
         }
-        }
-        @media screen {
+        /* 중형 디바이스 */
+        @media screen and (min-width: 768px) and (max-width: 959px){
             body{
                 background-color: beige;
+            }
+        }
+        /* 대형 디바이스 */
+        @media screen and (min-width: 960px) {
+            body{
+                background-color: burlywood;
             }
         }
     </style>
