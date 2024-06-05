@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let date = new Date();
+        let year = parseInt(prompt("출생년도를 입력하세요."));
+        let nowYear = date.getFullYear();
+        let age = year -nowYear;
+        let res = "";
+        if(age <= 19){
+            res = "청소년";
+        }
+        else if(age > 19){
+            res = "성인";
+        }
+        alert("당신의 나이는 " + age + "세 " + res);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
