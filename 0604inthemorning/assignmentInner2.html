@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "luckiestguy";
+            src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
+        }
+        /* @media screen and (min-width: 800px) {
+            .Textbox1 {
+            font-size: 16px;
+            }
+        } */
+        body{
+            background-image: url("../assignment11/imgs/back.jpg");
+            background-size: cover;
+        }
+        /* .box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        } */
+        .Textbox1{
+            font-size: 6vw;
+            font-weight: bolder;
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: #F9DB3A;
+            position: absolute;
+            text-align: center;
+            width : 80%;
+            top : -1%;
+            right : -4%;
+        }
+        #list1{
+            font-size: 2vw;
+            line-height: 3vw;
+            font-family: 'luckiestguy';
+            font-weight: bolder;
+            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+            list-style-type: none;
+            position : absolute;
+            text-align: left;
+            width: 55%;
+            height: 261px;
+            /* top : 80px; */
+            top : 2vw;
+            left : 43%;
+            letter-spacing: 10px;
+            margin-top: 4.5vw;
+        }
+        .Textbox2{
+            font-size: 6vw;
+            font-weight: bolder;
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: #F9DB3A;
+            position: absolute;
+            text-align: center;
+            width : 22%;
+            left : 22%;
+            margin-top: -10px;
+        }
+        #list2{
+            font-size: 2vw;
+            font-family: 'luckiestguy';
+            font-weight: bolder;
+            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+            list-style-type: none;
+            line-height: 3vw;
+            position : absolute;
+            text-align: right;
+            width: 55%;
+            height: 261px;
+            top : 23vw;
+            left: -12%;
+            letter-spacing: 10px;
+            margin-top: 4.5vw;
+        }
+        .Textbox3{
+            font-size: 6vw;
+            font-weight: bolder;
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: #F9DB3A;
+            position: absolute;
+            float : right;
+            text-align: center;
+            width : 80%;
+            margin-top: -10px;
+            right : -4%;
+        }
+        #list3{
+            font-size: 2vw;
+            line-height: 3vw;
+            font-family: 'luckiestguy';
+            font-weight: bolder;
+            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+            list-style-type: none;
+            position : absolute;
+            text-align: left;
+            width: 55%;
+            height: 261px;
+            top : 45vw;
+            left : 43%;
+            letter-spacing: 10px;
+            margin-top: 4.5vw;
+        }
+        .Textbox4{
+            font-size: 6vw;
+            font-weight: bolder;
+            font-family: 'luckiestguy';
+            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: #F9DB3A;
+            position: absolute;
+            text-align: center;
+            width : 50%;
+            left : 11%;
+            margin-top: -10px;
+        }
+        #list4{
+            font-size: 2vw;
+            font-family: 'luckiestguy';
+            font-weight: bolder;
+            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+            list-style-type: none;
+            line-height: 3vw;
+            position : absolute;
+            text-align: right;
+            width: 55%;
+            height: 261px;
+            top : 67vw;
+            left: -12%;
+            letter-spacing: 10px;
+            margin-top: 6vw;
+        }
+        #Cha{
+            border-radius: 10%;
+        }
+        #Bel{
+            border-radius: 10%;
+            position: relative;
+            left : 70%;
+        }
+        /* .box1{
+            width:100%;
+        } */
+        #SGW{
+            border-radius: 10%;
+        }
+        #JB{
+            border-radius: 10%;
+            position:relative;
+            left:70%;
+        }
+        .myButton1{
+            /* background-color:#44c767; */
+            border-radius:100%;
+            /* border:1px solid #18ab29; */
+            /* display:inline-block; */
+            cursor:pointer;
+            color:#ffffff;
+            position: relative;
+            left : 45%;
+        }
+        .myButton2{
+            border-radius:100%;
+            cursor:pointer;
+            color:#ffffff;
+            position: relative;
+            right : 5%;
+        }
+    </style>
+    
+</head>
+<body id="background">
+    <div id = "first">
+        <div class= "box1" id = "D6">
+            <img id=Cha src="../0604inthemorning/imgs/CHARLIE2.jpg" width="30%" height = "25%">
+            <span>
+                <span class = "Textbox1">Charlie Puth</span>
+                <ul id="list1">
+                    <li>Left Right Left</li>
+                    <li>Up All Night</li>
+                    <li>I don’t Think That I like her</li>
+                    <li>Smells Like Me</li>
+                </ul>
+            </span>
+            
+        </div>
+
+    </div>
+    <div id = "second">
+        <div class = "box2" id = "IN">
+            <img id=Bel src="../0604inthemorning/imgs/BELLEFIRE.jpg" width="30%" height = "25%">
+            <span>
+                <span  class = "Textbox2">Bellefire</span>
+                <ul id="list2">
+                    <li>Nobody Loves Me Like You Do</li>
+                    <li>Perfect Bliss</li>
+                    <li>Say Something Anyway</li>
+                    <li>Damn</li>
+                </ul>
+            </span>
+        </div>
+
+    </div>
+    <div id = "third">
+        <div class = "box3" id = "BB">
+            <img id="SGW" src="../0604inthemorning/imgs/SGW.jpg" width="30%" height = "25%">
+            <span>
+                <span class="Textbox3">SG Wannabe</span>
+                <ul id="list3">
+                    <li>사건의 지평선</li>
+                    <li>연애조건</li>
+                    <li>아리랑</li>
+                    <li>Stay</li>
+                </ul>
+            </span>
+        </div>
+
+    </div>
+    <div id="fourth">
+        <div class="box4" id="TS">
+            <img id="JB" src="../0604inthemorning/imgs/JUSTIN.jpg" width="30%" height = "25%">
+            <span >
+                <span class="Textbox4">Justin Bieber</span>
+                <ul id="list4">
+                    <li>Hold On</li>
+                    <li>Ghost</li>
+                    <li>Stay(The Kid Laroi)</li>
+                    <li>Sorry</li>
+                </ul>
+            </span>
+        </div>
+
+    </div>
+    <p id = "buttons">
+        <a href="../0604inthemorning/assignment.html" class="myButton1"><img src="../0604inthemorning/imgs/image 17.png" width= "10%"></a>
+        <a href="../0604inthemorning/assignmentInner2.html" class="myButton2"><img src="../0604inthemorning/imgs/image 16.png" width = "10%"></a>
+    </p>
+</body>
+</html>

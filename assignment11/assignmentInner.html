@@ -9,20 +9,24 @@
             font-family: "luckiestguy";
             src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
         }
+        
         .Textbox1{
-            font-size: 60px;
-            font-weight: bolder;
-            font-family: 'luckiestguy';
+            font-size : 60px;
+            font-weight : bolder;
+            font-family : 'luckiestguy';
             text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             color: #F9DB3A;
+            position: relative;
+            float : right;
         }
         .Textbox2{
-            font-size: 60px;
-            font-weight: bolder;
-            font-family: 'luckiestguy';
+            font-size : 60px;
+            font-weight : bolder;
+            font-family : 'luckiestguy';
             text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             color: #F9DB3A;
-
+            position: relative;
+            float : left;
         }
         .Textbox3{
             font-size: 60px;
@@ -30,7 +34,8 @@
             font-family: 'luckiestguy';
             text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             color: #F9DB3A;
-
+            position: relative;
+            float : right;
         }
         .Textbox4{
             font-size: 60px;
@@ -38,35 +43,52 @@
             font-family: 'luckiestguy';
             text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             color: #F9DB3A;
-
+            position: relative;
+            float : left;
+        }
+        #D6im{
+            border-radius: 10%;
+        }
+        #INim{
+            border-radius: 10%;
+        }
+        #BBim{
+            border-radius: 10%;
+        }
+        #TSim{
+            border-radius: 10%;
         }
     </style>
     
 </head>
 <body id="background">
     <div id = "first">
-        <p class= "box1" id = "D6">
+        <div class= "box1" id = "D6">
             <img id=D6im src="../assignment11/imgs/DAY6.jpg" width="25%" height ="17%">
-        </p>
-        <p class = "Textbox1">DAY6</p>
+            <span class = "Textbox1">DAY6</span>
+        </div>
+
     </div>
     <div id = "second">
-        <p class = "box2" id = "IN">
+        <div class = "box2" id = "IN">
             <img id=INim src="../assignment11/imgs/INFINITE.jpg" width="25%" height = "17%">
-        </p>
-        <p class = "Textbox2">INFINITE</p>
+            <span class = "Textbox2">INFINITE</span>
+        </div>
+
     </div>
     <div id = "third">
-        <p class = "box3" id = "BB">
+        <div class = "box3" id = "BB">
             <img id="BBim" src="../assignment11/imgs/BBMAK.jpg" width="25%" height = "17%">
-        </p>
-        <p class="Textbox3">BBMAK</p>
+            <span class="Textbox3">BBMAK</span>
+        </div>
+
     </div>
     <div id="fourth">
-        <p class="box4" id="TS">
+        <div class="box4" id="TS">
             <img id="TSim" src="../assignment11/imgs/TAYLOR.jpg" width="25%" height = "17%">
-        </p>
-        <p class="Textbox4">Taylor Swift</p>
+            <span class="Textbox4">Taylor Swift</span>
+        </div>
+
     </div>
 </body>
 </html>
