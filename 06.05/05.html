@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nowDate = new Date();
+        let hour = nowDate.getHours();
+        let res = "";       //emptyString이라고 부름
+        if(hour < 5){
+            res = "잠을 더 잘 수 있네?";
+        }
+        else if(hour < 7){
+            res = "등교 준비하세요.";
+        }
+        else if(hour <9){ 
+            res = "등교 하세요.";
+        }
+        else if(hour <12){
+            res = "오전 수업 풀집중하세요.";
+        }
+        else if(hour <14){
+            res = "점심 먹으세요.";
+        }
+        else{
+            res = "오후 수업 풀집중하고 집에 가지 마세요.";
+        }
+        alert(res);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
