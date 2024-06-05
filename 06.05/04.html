@@ -8,7 +8,7 @@
         let date = new Date();
         let year = parseInt(prompt("출생년도를 입력하세요."));
         let nowYear = date.getFullYear();
-        let age = year -nowYear;
+        let age = nowYear - year;
         let res = "";
         if(age <= 19){
             res = "청소년";
