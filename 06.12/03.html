@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function powerTest(x) {
-            let result = Math.pow(x,2);
+        function powerTest(x, n) {
+            let result = Math.pow(x,n);
             return result;
         }
-
-        let number = 7;
-        alert(number + "을(를) 제곱한 결과는 " + powerTest(number));
+        let number = prompt("숫자를 입력하세용");
+        let n = 10;
+        alert(number + "을(를)" + n + " 제곱한 결과는 " + powerTest(number,n));
     </script>
 </head>
 <body>
