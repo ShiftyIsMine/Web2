@@ -9,21 +9,11 @@
             font-family: "luckiestguy";
             src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
         }
-        /* @media screen and (min-width: 800px) {
-            .Textbox1 {
-            font-size: 16px;
-            }
-        } */
         body{
             background-image: url("../assignment11/imgs/back.jpg");
             background-size: cover;
         }
-        /* .box {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        } */
-        .Textbox1{
+        .Textbox1, .Textbox2, .Textbox3, .Textbox4 {
             font-size: 6vw;
             font-weight: bolder;
             font-family: 'luckiestguy';
@@ -32,148 +22,69 @@
             position: absolute;
             text-align: center;
             width : 80%;
-            top : -1%;
-            right : -4%;
+            margin-top: -10px;
         }
-        #list1{
+        .Textbox2 { width: 22%; left: 22%; }
+        .Textbox4 { width: 40%; left: 14%; }
+        ul {
             font-size: 2vw;
             line-height: 3vw;
             font-family: 'luckiestguy';
             font-weight: bolder;
-            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
             list-style-type: none;
-            position : absolute;
+            position: absolute;
             text-align: left;
             width: 55%;
-            height: 261px;
-            /* top : 80px; */
-            top : 2vw;
-            left : 43%;
             letter-spacing: 10px;
             margin-top: 4.5vw;
         }
-        .Textbox2{
-            font-size: 6vw;
-            font-weight: bolder;
-            font-family: 'luckiestguy';
-            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            color: #F9DB3A;
-            position: absolute;
-            text-align: center;
-            width : 22%;
-            left : 22%;
-            margin-top: -10px;
-        }
-        #list2{
-            font-size: 2vw;
-            font-family: 'luckiestguy';
-            font-weight: bolder;
-            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-            list-style-type: none;
-            line-height: 3vw;
-            position : absolute;
-            text-align: right;
-            width: 55%;
-            height: 261px;
-            top : 23vw;
-            left: -12%;
-            letter-spacing: 10px;
-            margin-top: 4.5vw;
-        }
-        .Textbox3{
-            font-size: 6vw;
-            font-weight: bolder;
-            font-family: 'luckiestguy';
-            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            color: #F9DB3A;
-            position: absolute;
-            float : right;
-            text-align: center;
-            width : 80%;
-            margin-top: -10px;
-            right : -4%;
-        }
-        #list3{
-            font-size: 2vw;
-            line-height: 3vw;
-            font-family: 'luckiestguy';
-            font-weight: bolder;
-            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-            list-style-type: none;
-            position : absolute;
-            text-align: left;
-            width: 55%;
-            height: 261px;
-            top : 45vw;
-            left : 43%;
-            letter-spacing: 10px;
-            margin-top: 4.5vw;
-        }
-        .Textbox4{
-            font-size: 6vw;
-            font-weight: bolder;
-            font-family: 'luckiestguy';
-            text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            color: #F9DB3A;
-            position: absolute;
-            text-align: center;
-            width : 40%;
-            left : 14%;
-            margin-top: -10px;
-        }
-        #list4{
-            font-size: 2vw;
-            font-family: 'luckiestguy';
-            font-weight: bolder;
-            /* text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-            list-style-type: none;
-            line-height: 3vw;
-            position : absolute;
-            text-align: right;
-            width: 55%;
-            height: 261px;
-            top : 67vw;
-            left: -12%;
-            letter-spacing: 10px;
-            margin-top: 4.5vw;
-        }
-        #D6im{
+        #list1 { top: 2vw; left: 43%; }
+        #list2 { top: 23vw; left: -12%; text-align: right; }
+        #list3 { top: 45vw; left: 43%; }
+        #list4 { top: 67vw; left: -12%; text-align: right; }
+        img {
             border-radius: 10%;
         }
-        #INim{
-            border-radius: 10%;
-            position: relative;
-            left : 70%;
-        }
-        /* .box1{
-            width:100%;
-        } */
-        #BBim{
-            border-radius: 10%;
-        }
-        #TSim{
-            border-radius: 10%;
-            position:relative;
-            left:70%;
-        }
-        .myButton1{
-            /* background-color:#44c767; */
-            border-radius:100%;
-            /* border:1px solid #18ab29; */
-            /* display:inline-block; */
-            cursor:pointer;
-            color:#ffffff;
-            position: relative;
-            left : 45%;
-        }
-        .myButton2{
+        #INim { position: relative; left: 70%; }
+        #TSim { position:relative; left:70%; }
+        .myButton1, .myButton2 {
             border-radius:100%;
             cursor:pointer;
             color:#ffffff;
-            position: relative;
-            left : 80%;
         }
+        .myButton1 { position: relative; left: 45%; }
+        .myButton2 { position: relative; left: 80%; }
         a { color: #333; }
+        #videoContainer {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #videoContainer iframe {
+            width: 100%;
+            height: 400px;
+        }
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
     </style>
     
 </head>
@@ -184,7 +95,7 @@
             <span>
                 <span class = "Textbox1">DAY6</span>
                 <ul id="list1">
-                    <li><a href="https://open.spotify.com/track/1nahzW3kfMuwReTka28tH5?si=0918fc7e886c4e4e"  style="text-decoration:none">한 페이지가 될 수 있게</a></li>
+                    <li><a href="#" onclick="showVideo('https://www.youtube.com/embed/1nahzW3kfMuwReTka28tH5')">한 페이지가 될 수 있게</a></li>
                     <li>I Loved You</li>
                     <li>Congratulations</li>
                     <li>Zombie</li>
