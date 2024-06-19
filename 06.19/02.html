@@ -6,10 +6,13 @@
     <title>Document</title>
     <script>
         function changeObject(){
-            let obj = document.getElementById("campus"); //campus라는 걸 받아서 ojb 반환
-            obj.style.color = "yellow";
-            obj.style.backgroundColor = "black";
-            obj.innerHTML = "Seoul Jeongsu Campus Freshmen"; //css가 아니라 style은 뺌
+            let objs = document.querySelectorAll("h1"); //h1태그 명을 갖는 요소 객체들을 배열 형태로 반환
+            for(let i = 0; i < objs.length; i++){
+                objs[i].style.color = "aquamarine";
+                objs[i].style.backgroundColor = "black";
+                objs[i].innerHTML = "Seoul Jeongsu Campus Freshmen"; //css가 아니라 style은 뺌
+            }
+
         }
     </script>
 </head>
