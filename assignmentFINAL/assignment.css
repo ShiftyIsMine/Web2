@@ -1,7 +1,7 @@
 
 @font-face{
     font-family: 'luckiestguy';
-    src: url('../assignment11/assets/fonts/luckiestguy.woff') format('woff');
+    src: url('../assignmentFINAL/assets/fonts/luckiestguy.woff') format('woff');
 }
 *{
     margin: 0;
@@ -29,6 +29,7 @@
     float : left;
     margin-left: 10%;
     margin-top: 5%;
+    font-weight: bolder;
     /* bottom : 10%; */
     font-family: 'luckiestguy';
     text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -59,5 +60,9 @@
 .myButton:active {
     position:relative;
     top:1px;
+}
+#clock{
+    position: absolute;
+    bottom : 1vw;
 }
 

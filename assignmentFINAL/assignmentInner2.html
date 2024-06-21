@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assignmentFINAL/assignmentinner2.css">
+    <script>
+        function playPlayer(url){
+            let videoContainer = document.getElementById('videoContainer');
+            let videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = url;
+            videoContainer.style.display = "block";
+        }
+        function closeVideo() {
+            let videoContainer = document.getElementById('videoContainer');
+            let videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = '';
+            videoContainer.style.display = 'none';
+        }
+
+    </script>
 </head>
 <body id="background">
     <div id="first">
@@ -13,10 +28,10 @@
             <span>
                 <span class="Textbox1">Charlie Puth</span>
                 <ul id="list1">
-                    <li><a href="https://youtu.be/z-eg-bBCQJM?si=Z2tspQQ7x9bGkTzU" target="_blank">Left Right Left</a></li>
-                    <li><a href="https://youtu.be/vBLQFGHtSzg?si=1Wy7F_DJDboWSCmW" target="_blank">Up All Night</a></li>
-                    <li><a href="https://youtu.be/9voN0gkdlS4?si=mLUbP2OcbDrGI0yw" target="_blank">I don’t Think That I like her</a></li>
-                    <li><a href="https://youtu.be/KyBHXjh0mzo?si=-6cSe6bUGOKYGkpt" target="_blank">Smells Like Me</a></li>
+                    <li><a href="#" onclick = "playPlayer('https://www.youtube.com/embed/z-eg-bBCQJM?si=jNmRgfW5DMr-rfU6')">Left Right Left</a></li>
+                    <li><a href="#" onclick = "playPlayer('https://www.youtube.com/embed/vBLQFGHtSzg?si=ZMZO9WW6iERpj9nL')">Up All Night</a></li>
+                    <li><a href="#" onclick = "playPlayer('https://www.youtube.com/embed/9voN0gkdlS4?si=4Iob0geN9L_pDLkF')">I don’t Think That I like her</a></li>
+                    <li><a href="#" onclick = "playPlayer('https://www.youtube.com/embed/KyBHXjh0mzo?si=Pb1a1iCDQz6AE78d')">Smells Like Me</a></li>
                 </ul>
             </span>
         </div>
@@ -27,10 +42,10 @@
             <span>
                 <span class="Textbox2">Bellefire</span>
                 <ul id="list2">
-                    <li><a href="https://youtu.be/uE8QgWOJlXg?si=EgOM_duHo9NCgLyg" target="_blank">Nobody Loves Me Like You Do</a></li>
-                    <li><a href="https://youtu.be/tj_NusoGJa4?si=V-gs0zV1MHifXw2w" target="_blank">Perfect Bliss</a></li>
-                    <li><a href="https://youtu.be/cfoltH2_NbI?si=PvL8YubTHqytvxRy" target="_blank">Say Something Anyway</a></li>
-                    <li><a href="https://youtu.be/mKoQcVq3Rck?si=tZdABMiqIhy8qiak" target="_blank">Damn</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/uE8QgWOJlXg?si=s5IPbda1UWMD5n3p&amp')">Nobody Loves Me Like You Do</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/tj_NusoGJa4?si=VWKdPw1_Ka7UaKi6')">Perfect Bliss</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/cfoltH2_NbI?si=wp6PAhm6DQ6xg2YL')">Say Something Anyway</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/mKoQcVq3Rck?si=B63PZd4YJaqkSk-i')">Damn</a></li>
                 </ul>
             </span>
         </div>
@@ -41,10 +56,10 @@
             <span>
                 <span class="Textbox3">SG Wannabe</span>
                 <ul id="list3">
-                    <li><a href="https://youtu.be/7lT1Wt41gDs?si=Yh0XG7LtS1n9SMNT" target="_blank">내 사람(Partner For Life)</a></li>
-                    <li><a href="https://youtu.be/zVj6Glj111o?si=brePxanKg8_I_9ec" target="_blank">은</a></li>
-                    <li><a href="https://youtu.be/VCF2AdGrU_8?si=i4Cp0U9YWX1mS2P4" target="_blank">아리랑</a></li>
-                    <li><a href="https://youtu.be/L0xCZo_7nEU?si=FKdr1qt-AGudLNRK" target="_blank">Stay</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/G5hbOrbfSRY?si=MWcctQHgflc5vb1z')">내 사람(Partner For Life)</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/zVj6Glj111o?si=iRMkGhNThj5JSTv3')">은</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/m4LGuu5b57c?si=dIUhzUc2rDbIroR8')">아리랑</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/L0xCZo_7nEU?si=5Ud6isLeq1aYasmx')">Stay</a></li>
                 </ul>
             </span>
         </div>
@@ -55,10 +70,10 @@
             <span>
                 <span class="Textbox4">Justin Bieber</span>
                 <ul id="list4">
-                    <li><a href="https://youtu.be/LWeiydKl0mU?si=qxPtm2Eu_093zROc" target="_blank">Hold On</a></li>
-                    <li><a href="https://youtu.be/Fp8msa5uYsc?si=-2KIKIWaFgLOl6hY" target="_blank">Ghost</a></li>
-                    <li><a href="https://youtu.be/kTJczUoc26U?si=9OYOgFbpAK-nov2d" target="_blank">Stay(The Kid Laroi)</a></li>
-                    <li><a href="https://youtu.be/8ELbX5CMomE?si=TyagWl8aEFucwd66" target="_blank">Sorry</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/LWeiydKl0mU?si=GaysEmrmwgnkGf5t')">Hold On</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/Fp8msa5uYsc?si=CCheePAHBgpMB5k6')">Ghost</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/kTJczUoc26U?si=YoIIKO6QFxVPFbWo')">Stay(The Kid Laroi)</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/8ELbX5CMomE?si=3tZs211xcDE549X_')">Sorry</a></li>
                 </ul>
             </span>
         </div>
@@ -69,10 +84,10 @@
             <span>
                 <span class="Textbox5">Queen</span>
                 <ul id="list5">
-                    <li><a href="https://youtu.be/N0dbGGvsjf8?si=YlLBJ0m5wZ4dEeu0" target="_blank">Bohemian Rhapsody</a></li>
-                    <li><a href="https://youtu.be/nHlyCXWhOt8?si=-24sD52V8VTVtFMa" target="_blank">Save me</a></li>
-                    <li><a href="https://youtu.be/aA2IRoPFIn0?si=9Si01-ONqzRKGsh7" target="_blank">Somebody To Love</a></li>
-                    <li><a href="https://youtu.be/hBp4dgE7Bho?si=xG0yyRECHomH-uKV" target="_blank">Dont Stop Me Now</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/N0dbGGvsjf8?si=gTIX_LvxbC4Z9ch9')">Bohemian Rhapsody</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/nHlyCXWhOt8?si=KuAMmk8IwSzQmq6u')">Save me</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/aA2IRoPFIn0?si=JaWaJbL0_vuwKb62')">Somebody To Love</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/hBp4dgE7Bho?si=8rR9IoCeQROZLa40')">Dont Stop Me Now</a></li>
                 </ul>
             </span>
         </div>
@@ -83,10 +98,10 @@
             <span>
                 <span class="Textbox6">YounHa</span>
                 <ul id="list6">
-                    <li><a href="https://youtu.be/BBdC1rl5sKY?si=Ed2OA2RFDdonIrUn" target="_blank">사건의 지평선(Event Horizon)</a></li>
-                    <li><a href="https://youtu.be/D9tecCjqCvU?si=sOYYx7DilUqs1qMI" target="_blank">연애조건</a></li>
-                    <li><a href="https://youtu.be/r5MM2iI8-58?si=bak2_rTCL-_L9-JC" target="_blank">비밀번호486</a></li>
-                    <li><a href="https://youtu.be/NIPtyAKxlRs?si=pjbhDXVtwLDlo9q1" target="_blank">우산(Epik High)</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/BBdC1rl5sKY?si=L8-c-JvGP-gpqqme')">사건의 지평선(Event Horizon)</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/D9tecCjqCvU?si=yT4tZaYs7q96RbmN')">연애조건</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/r5MM2iI8-58?si=cuTppq2Zg1WbS-r4')">비밀번호486</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/NIPtyAKxlRs?si=glJGTQHogDRWK0Wu')">우산(Epik High)</a></li>
                 </ul>
             </span>
         </div>
@@ -97,23 +112,23 @@
             <span>
                 <span class="Textbox3">Others</span>
                 <ul id="list7">
-                    <li><a href="https://youtu.be/7UecFm_bSTU?si=KfNLqwPjMGtX1Cbd" target="_blank">NMIXX - Dash</a></li>
-                    <li><a href="https://youtu.be/OiC1rgCPmUQ?si=IYqZHXFaVpa6ObP9" target="_blank">Dua Lipa - Dance The Night</a></li>
-                    <li><a href="https://youtu.be/xeugznpGKPA?si=hWRdKWKPrQwtaeEy" target="_blank">Sam Smith - Like I Can</a></li>
-                    <li><a href="https://youtu.be/f4Y3b7un4LE?si=4yUpgimtmbGBzQSs" target="_blank">Benson Boone - Slow It Down</a></li>
-                    <li><a href="https://youtu.be/Oa_RSwwpPaA?si=B5aSb1zRKL8rnVW_" target="_blank">Benson Boone - Beautiful Things</a></li>
-                    <li><a href="https://youtu.be/FkefRSxpuFk?si=f6wz7rmN2dfQusug" target="_blank">Gyubin - Really like you</a></li>
-                    <li><a href="https://youtu.be/eVli-tstM5E?si=URqNExem5vkr9ESx" target="_blank">Sabrina Carpenter - Espresso</a></li>
-                    <li><a href="https://youtu.be/4QIZE708gJ4?si=uETVyCRb3_agNO6s" target="_blank">Post Malone - I Had Some Help</a></li>
-                    <li><a href="https://youtu.be/zArxQ_wKwH0?si=_QEYrbtFfX4EOyxF" target="_blank">Peder Elias - Better Alone</a></li>
-                    <li><a href="https://youtu.be/FzVR_fymZw4?si=pqFEUp6-VS3Rw9pU" target="_blank">Blackpink - Stay</a></li>
-                    <li><a href="https://youtu.be/s_7yNDzG7OI?si=TThWB0ivfaprltAt" target="_blank">Blackpink - Forever Young</a></li>
-                    <li><a href="https://youtu.be/vJF9kJxQpBY?si=ExxlzpiNCcFMxHre" target="_blank">Why Dont We - Just Friends</a></li>
-                    <li><a href="https://youtu.be/xEeFrLSkMm8?si=tud2pL4wlSe3C3XH" target="_blank">BTS - 봄날</a></li>
-                    <li><a href="https://youtu.be/epcFAcKYD20?si=K8meopeq-lSLFJmy" target="_blank">양파 - 사랑 그게 뭔데...</a></li>
-                    <li><a href="https://youtu.be/dCSf1ju2PRo?si=LgNkBSTWDuifAlmp" target="_blank">김동희 - 사랑을 몰랐죠</a></li>
-                    <li><a href="https://youtu.be/273eSvOwpKk?si=4bnfiVEfD0dyAS13" target="_blank">Take That - Patience</a></li>
-                    <li><a href="https://youtu.be/Il-an3K9pjg?si=6Yb5CuelOy9siheu" target="_blank">Anne-Marie - 2002</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/7UecFm_bSTU?si=RUwXGIQJXOyhjDfq')">NMIXX - Dash</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/OiC1rgCPmUQ?si=RkYtSFG5qwd1-Cpz')">Dua Lipa - Dance The Night</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/xeugznpGKPA?si=1iPHIhuhF1hgKFMD')">Sam Smith - Like I Can</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/f4Y3b7un4LE?si=3ttz7Vhz9wLDehZm')">Benson Boone - Slow It Down</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/Oa_RSwwpPaA?si=VmxHCvcfVq0Nk606')">Benson Boone - Beautiful Things</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/FkefRSxpuFk?si=0o4m1Oxs7OZyfmtp')">Gyubin - Really like you</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/eVli-tstM5E?si=BqIALK6rlVz0zHSZ')">Sabrina Carpenter - Espresso</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/4QIZE708gJ4?si=usU_7fu9WnFebByp')">Post Malone - I Had Some Help</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/zArxQ_wKwH0?si=CPiAsQg8gbXsYaAf')">Peder Elias - Better Alone</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/FzVR_fymZw4?si=nneRTUgp3jH1Poje')">Blackpink - Stay</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/-gibBYpzZbI?si=QyqOS9L7e2S34SGf')">Blackpink - Forever Young</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/vJF9kJxQpBY?si=NKJV8ksYw7bCt3iR')">Why Dont We - Just Friends</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/xEeFrLSkMm8?si=MUyWwZUhy4Z2IcDo')">BTS - 봄날</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/epcFAcKYD20?si=KHe9pN81PVpHTJck')">양파 - 사랑 그게 뭔데...</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/booq7iFP0Yw?si=cBpmfJhw3nlE3iyc')">김동희 - 사랑을 몰랐죠</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/273eSvOwpKk?si=J8eCr02NgHueoC87')">Take That - Patience</a></li>
+                    <li><a href="#" onclick="playPlayer('https://www.youtube.com/embed/Il-an3K9pjg?si=ptVE_xQPjJpQC_Vo')">Anne-Marie - 2002</a></li>
                 </ul>
             </span>
         </div>
@@ -135,6 +150,11 @@
     <div id = "BTNbox">
     <a href="../assignmentFinal/assignment.html" class="myButton1"><img src="../assignmentFinal/imgs/image 17.png" width = "70%" height = "70%"></a>
     <a href="../assignmentFinal/assignmentInner1.html" class="myButton2"><img src="../assignmentFinal/imgs/image 18.png" width = "70%" height = "70%"></a>
+    </div>
+
+    <div id="videoContainer">
+        <button id="closeButton" onclick="closeVideo()">×</button>
+        <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>

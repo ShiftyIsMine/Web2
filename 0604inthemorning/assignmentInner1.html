@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function showVideo(url) {
+            var videoContainer = document.getElementById('videoContainer');
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = url;
+            videoContainer.style.display = 'block';
+        }
+
+        function closeVideo() {
+            var videoContainer = document.getElementById('videoContainer');
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = '';
+            videoContainer.style.display = 'none';
+        }
+    </script>
     <style>
         @font-face {
             font-family: "luckiestguy";
@@ -95,7 +110,7 @@
             <span>
                 <span class = "Textbox1">DAY6</span>
                 <ul id="list1">
-                    <li><a href="#" onclick="showVideo('https://www.youtube.com/embed/1nahzW3kfMuwReTka28tH5')">한 페이지가 될 수 있게</a></li>
+                    <li><a href="" onclick="showVideo('https://youtu.be/vnS_jn2uibs?si=aDYDWy47u9b7GUZF')">한 페이지가 될 수 있게</a></li>
                     <li>I Loved You</li>
                     <li>Congratulations</li>
                     <li>Zombie</li>
@@ -153,6 +168,10 @@
         <a href="../0604inthemorning/assignment.html" class="myButton1"><img src="../0604inthemorning/imgs/image 17.png" width= "10%"></a>
         <a href="../0604inthemorning/assignmentInner2.html" class="myButton2"><img src="../0604inthemorning/imgs/image 16.png" width = "10%"></a>
     </p>
+    <div id="videoContainer">
+        <button id="closeButton" onclick="closeVideo()">×</button>
+        <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 </body>
 </html>
